@@ -14,13 +14,13 @@ const dreams = [
 ];
 
 // make all the files in 'public' available
+app.use(express.static("public"));
 app.use(express.static("pokemon_public"));
 app.use(express.static("todo_public"));
 app.use(express.static("guess_public"));
 
 app.get("/", (req, res) => {
-  res.json(new Date());
-  res.send();
+  res.sendFile(__dirname + "/views/index.html")
 });
 
 app.get("/pokemon", (req, res) => {
@@ -32,8 +32,8 @@ app.get("/todo" , (req, res) => {
 });
 
 app.get("/guess", (req, res) => {
-  res.sendFile(__dirname + "/views/guess/index.html")
-})
+  res.sendFile(__dirname + "/views/guess/index.html");
+});
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT, () => {
