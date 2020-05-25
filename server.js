@@ -15,7 +15,7 @@ const dreams = [
 
 // make all the files in 'public' available
 // https://expressjs.com/en/starter/static-files.html
-app.use(express.static("public"));
+app.use(express.static("pokemon_public"));
 
 app.get("/", (req, res) => {
   res.json("hold on!");
