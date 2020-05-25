@@ -1,52 +1,115 @@
-<!-- This is a static file -->
-<!-- served from your routes in server.js -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A cool thing made with Glitch">
 
-    <title>Welcome to Glitch!</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"crossorigin="anonymous"></script>
+</head>
 
-    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
+<body>
+    <div class="fixed-top">
 
-    <!-- import the webpage's client-side javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>A Dream of the Future</h1>
-    </header>
+        <nav class="navbar bg-secondary navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Toggle-Content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
 
-    <main>
-      <h2>Oh hi,</h2>
+        <nav class="navbar collapse bg-secondary navbar-light " id="Toggle-Content">
+            <ul class="nav navbar-nav" id="mynav-list">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">關於我</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">作品集</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">聯絡我</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </div>
 
-      <p>Tell me your hopes and dreams:</p>
+    <div id="my-profile">
 
-      <form>
-        <label>
-          New Dream
-          <input name="dream" type="text" maxlength="100" required placeholder="Dreams!">
-        </label>
-        <button type="submit" id="submit-dream">Add Dream</button>
-      </form>
+        <div class="my-prof-content" id="pic">
+            <img src="" alt="ops" />
+        </div>
 
-      <section class="dreams">
-        <ul id="dreams">
-          <em>loading dreams&hellip;</em>
-        </ul>
-      </section>
-    </main>
+        <div class="my-prof-content" id="text">
+            <h3 id="about">關於我</h3>
+            <p>
+                &nbsp&nbsp 我畢業於中興大學應用數學系，因為大學時就對對寫程式有興趣，大四的時候開始自學python，
+                畢業後像很多人一樣迷惘時，我不確定自己真正擅長什麼，但是我發現自己對於coding是越來越喜愛，
+                享受著解決問題的成就感以及實做出一個小功能時的喜悅，半年多前我決定給自己半年的時間學習網頁前端的各種技術，
+                有了明確的目標後，上課加上自學，我認為自己有掌握最基礎的技能。
+                <a id="show-more" class="btn btn-secondary">
+                    更多...
+                </a>
+            </p>
+        </div>
 
-    <footer>Made with <a href="https://glitch.com">Glitch</a>!</footer>
+        <div class="my-prof-content more">
+            <p>
+                &nbsp&nbsp 我畢業於中興大學應用數學系，因為大學時就對對寫程式有興趣，大四的時候開始自學python，
+                畢業後像很多人一樣迷惘時，我不確定自己真正擅長什麼，但是我發現自己對於coding是越來越喜愛，
+                享受著解決問題的成就感以及實做出一個小功能時的喜悅，半年多前我決定給自己半年的時間學習網頁前端的各種技術，
+                有了明確的目標後，上課加上自學，我認為自己有掌握最基礎的技能。
+            </p>
+            <p>
+                &nbsp&nbsp 因為是自學又非資訊相關科系，我知道自己的弱項是懂的東西就是會比本科系少，
+                我認為前端的領域似乎對非本科系出身的人比較「公平」，理由之一是學習門檻，以我自己來說初學程式的痛點不是迴圈怎麼寫、字串或陣列的處理，
+            </p>
+        </div>
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:2em;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
-  </body>
+        <div class="my-prof-content more">
+            <p>
+                而是程式的邏輯寫好後如何讓他有用，真正讓人想放棄的事情是，為了做出一個像樣的東西必須載入一堆套件、安裝工具等等，
+                而學網頁前端一開始只要打開編輯器和瀏覽器，寫得程式馬上展現在眼前，簡單清楚，把力氣花在html、js、css本身，
+                有需要就去學怎麼用函式庫，再來就是打包工具怎麼用，接著練習用git，最後我對前面所述的東西有一定理解後就學習restful的概念。
+                <a id="hide-more" class="btn btn-secondary">
+                    顯示部份
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+    <div id="my-projects">
+        <div class="card card-style">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><To-do List/h5>
+              <p class="card-text">React, Redux</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+</body>
+
+<script>
+    $('.more').hide()
+
+    $('#show-more').click(function(){
+        $('#pic').hide()
+        $('#text').hide()
+        $('.more').show()
+        $('#show-more').css('display','none')
+    })
+
+    $('#hide-more').click(function(){
+        $('.more').hide()
+        $('#pic').show()
+        $('#text').show()
+        $('#show-more').css('display','inline')
+    })
+</script>
+
 </html>
