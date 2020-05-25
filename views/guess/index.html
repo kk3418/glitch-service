@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" ></script>
+    <link rel="icon" href="./format_list_bulleted-24px.svg" />
+</head>
+
+<body>
+    <div class="content">
+        <span id="title"> You have 8 more chance !</span><br>
+        <div id="display">
+        </div>   <!--The place display numbers and ?A?B-->
+        <div id="buttonGroup">
+            <script>
+                for (let i = 0; i < 10; i++) {
+                    let temp = document.createElement("button");
+                    temp.setAttribute('class', 'buttonSty'); temp.setAttribute('onclick', `ButtonClick(${i})`);
+                    temp.innerHTML = `${i}`;
+                    buttonGroup.appendChild(temp);
+                }
+                //create buttons 0-9
+            </script>
+        </div>
+        <br>
+        <div class="actionGroup">
+            <button id="ok" onclick="okClick()">ok</button>
+            <button id="cancel" onclick="cancelClick()">cancel</button>
+            <button id="restart" onclick="restartClick()">restart</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#display {
+    width: 50vw;
+    min-height: 50vh;
+    margin: 0 auto 50px auto;
+    background-color: #9CAAC7;
+    color: darkblue;
+    box-shadow: 0 3px 14px 2px #0a4552;
+    text-align: center;
+}
+
+#display>span {
+    font-size: 1.3rem;
+    line-height: 3rem;
+    border-bottom: 1px dotted black;
+}
+
+.buttonSty {
+    font-size: 1rem;
+    width: 3.2rem;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #9CAAC7;
+    color: #3B5998;
+    border-radius: 20%;
+    border: 0;
+}
+
+.buttonSty:hover {
+    background-color: #5D9649;
+    color: #3B5998;
+}
+
+.actionGroup {
+    margin-top: 10px;
+}
+
+#ok, #cancel, #restart {
+    font-size: 1.2rem;
+    width: 7.5rem;
+    color: #3B5998;
+    background-color: #9CAAC7;
+    box-shadow: black;
+    border-radius: 20%;
+    padding: 10px;
+    margin-left: 25px;
+    border: 0;
+}
+
+#ok:hover, #cancel:hover, #restart:hover {
+    background-color: #5D9649;
+    color: #3B5998;
+}
