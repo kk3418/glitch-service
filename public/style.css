@@ -21,32 +21,38 @@
 }
 
 #pic {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#text {
-
+#pic img {
+    height: 30vh;
+    width: 50vw;
+    object-fit: contain;
 }
 
-h3#about {
-    margin-bottom: 24px;
-}
+/* #text {
+
+} */
 
 #my-projects {
     position: relative;
     top: 56px;
-    height: 60vh;
+    min-height: 60vh;
     width: 100%;
     background-color: rgb(99, 108, 118);
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     font-size: 20px;
 }
 
 .card-style {
-    height: 80%;
-    width: 30vw;
+    margin: 5vh auto 5vh auto;
+    min-width: 30vw;
     box-shadow: 1px 2px 10px 1px #000;
+    padding-bottom: 5vh;
 }
 
