@@ -17,7 +17,7 @@ const dreams = [
 app.use(express.static("public"));
 app.use(express.static("pokemon_public"));
 app.use(express.static("todo_public"));
-app.use(express.static("guess_public"));
+
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html")
