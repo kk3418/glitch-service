@@ -4,9 +4,11 @@
 作品是Pokemon, Tod-do List,  Guess Number
 
 ### 對應的技術分別是:
-Pokemon : react.js, graphql
-Tod-do List : react.js, redux
-Guess Number : javascript(ES6)
+1.Pokemon : react.js, graphql
+
+2.Tod-do List : react.js, redux
+
+3.Guess Number : javascript(ES6)
 
 ![](https://media.giphy.com/media/cPT1bMwqjgzAhKnV5V/giphy.gif)
 [前往](https://mighty-fabulous-meteorite.glitch.me)
