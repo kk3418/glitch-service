@@ -1,45 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&family=Noto+Serif+TC:wght@500&display=swap');
+
 :root {
-    font-size: 18px;
+  font-family: 'Noto Sans TC', 'Noto Serif TC' sans-serif;
+  font-size: 18px;
+}
+
+p,
+li {
+  color: #F5F5F5;
 }
 
 #mynav-list {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 #my-profile {
-    position: relative;
-    top: 56px;
-    background-color: rgb(120, 124, 128);
-    min-height: 50vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+  position: relative;
+  top: 56px;
+  background-color: rgb(120, 124, 128);
+  min-height: 50vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 
 .my-prof-content {
-    line-height: 36px;
-    font-size: 1rem;
-    font-style: normal;
-    padding: 30px;
+  line-height: 36px;
+  font-size: 1rem;
+  padding: 30px;
 }
 
 #pic {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #pic img {
-    height: 50vh;
-    width: 30vw;
-    object-fit: contain;
+  height: 50vh;
+  width: 30vw;
+  object-fit: contain;
 }
 
 @media (max-width: 500px) {
-    #my-profile {
-        grid-template-columns: 1fr;
-    }
+  #my-profile {
+    grid-template-columns: 1fr;
+  }
   #pic {
     justify-content: center;
   }
@@ -49,60 +56,82 @@
 }
 
 #my-projects {
-    position: relative;
-    top: 56px;
-    min-height: 85vh;
-    width: 100vw;
-    background-color: rgb(99, 108, 118);
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  top: 56px;
+  min-height: 85vh;
+  width: 100vw;
+  background-color: rgb(99, 108, 118);
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .card-style {
-    min-height: 75vh;
-    width: fit-content;   /*maybe same effect as 100% */
-    margin: 5vh auto 5vh auto;
-    box-shadow: 1px 2px 10px 1px #000;
-    padding-bottom: 3vh;
+  min-height: 75vh;
+  width: fit-content; /*maybe same effect as 100% */
+  margin: 5vh auto 5vh auto;
+  box-shadow: 1px 2px 10px 1px #000;
+  padding-bottom: 3vh;
 }
 
 .card-style div.img-container {
-    display: block;
-    height: 50vh;
-    width: 56vw;
-    margin-bottom: 3vh;
+  display: block;
+  height: 50vh;
+  width: 56vw;
+  margin-bottom: 3vh;
 }
 
 .card-style div.img-container img {
-    height: inherit;
-    width: inherit;
+  height: inherit;
+  width: inherit;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project > * {
+  display: block;
+  margin: 10px auto;
+}
+
+.project-title {
+  border-bottom: 1px dashed black;
+  width: 35%;
+  color: white;
+  text-align: center;
 }
 
 .react {
-    display: inline-block;
-    background-color: lightblue;
-    color: white;
+  display: inline-block;
+  background-color: lightblue;
+  color: white;
+  margin: 0 20px;
 }
 
 .graphql {
-    display: inline-block;
-    background-color: pink;
-    color: white;
+  display: inline-block;
+  background-color: pink;
+  color: white;
 }
 
 .js {
-    display: inline-block;
-    background-color: yellow;
-    color: black;
+  display: inline-block;
+  background-color: yellow;
+  color: black;
 }
 
 .redux {
-    display: inline-block;
-    background-color: purple;
-    color: white;
+  display: inline-block;
+  background-color: purple;
+  color: white;
 }
 
-.react, .redux, .graphql, .js {
-    padding: 5px;
+.react,
+.redux,
+.graphql,
+.js {
+  padding: 5px;
 }
