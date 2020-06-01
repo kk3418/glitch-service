@@ -26,13 +26,13 @@
 
 #pic {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 #pic img {
     height: 50vh;
-    width: 50vw;
+    width: 30vw;
     object-fit: contain;
 }
 
@@ -40,6 +40,12 @@
     #my-profile {
         grid-template-columns: 1fr;
     }
+  #pic {
+    justify-content: center;
+  }
+  #pic img {
+    width: 100vw;
+  }
 }
 
 #my-projects {
