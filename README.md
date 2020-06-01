@@ -10,5 +10,6 @@
 
 3.Guess Number : javascript(ES6)
 
-![](https://media.giphy.com/media/cPT1bMwqjgzAhKnV5V/giphy.gif)
 [前往](https://mighty-fabulous-meteorite.glitch.me)
+
+![](https://media.giphy.com/media/cPT1bMwqjgzAhKnV5V/giphy.gif)
