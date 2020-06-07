@@ -61,7 +61,7 @@ li {
 #my-projects {
   position: relative;
   top: 56px;
-  min-height: 85vh;
+  min-height: 75vh;
   width: 100vw;
   background-color: rgb(99, 108, 118);
   font-size: 1.1rem;
@@ -70,16 +70,15 @@ li {
 }
 
 .card-style {
-  min-height: 75vh;
-  width: fit-content; /*maybe same effect as 100% */
+  min-height: 65vh;
+  width: 65vw;
   margin: 5vh auto 5vh auto;
   box-shadow: 1px 2px 10px 1px #000;
-  padding-bottom: 3vh;
 }
 
 .card-style div.img-container {
   display: block;
-  height: 50vh;
+  height: 40vh;
   width: 56vw;
   margin-bottom: 3vh;
 }
@@ -102,9 +101,18 @@ li {
 
 .project-title {
   border-bottom: 1px dashed black;
-  width: 35%;
   color: white;
   text-align: center;
+}
+
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-buttons >a {
+  margin: 5px;
 }
 
 .react {
